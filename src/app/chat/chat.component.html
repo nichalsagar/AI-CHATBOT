@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="col-md-12 text-center">
+    <h1 class="Heading">AI Bot</h1>
+    <hr />
+    <ng-container *ngFor="let message of messages">
+      <div
+        class="message"
+        [ngClass]="{
+          from: message.author === 'bot',
+          to: message.author === 'user'
+        }"
+      >
+        {{ message.content }}
+      </div>
+    </ng-container>
+  </div>
+  <div class="col-md-12 text-center">
+    <label *ngIf="messages.length == 0
+    " for="nameField">
+      Your Messagae
+    </label>
+    <input
+      [(ngModel)]="value"
+      (keyup.enter)="sendMessage()"
+      type="text"
+      class="form-control"
+    />
+    <button class="btn btn-success" (click)="sendMessage()">Ask Me</button>
+    <ng-template
+      ><span [className]="'float-right'">Total Message:</span></ng-template
+    >
+  </div>
+</div>

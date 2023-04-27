@@ -1,0 +1,27 @@
+.message{
+    border-radius: 50px;
+    margin: 0 15px 20px;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 20px;
+    color: cadetblue;
+}
+.message.to{
+    background-color:rgb(106, 192, 241);
+    color: #fff;
+    margin-left:100px;
+    text-align: right;
+}
+.message.from{
+    background-color: green;
+    color: azure;
+    margin-right: 100px;
+}
+.message.to + .message.to,
+.message.from + .message.message.from{
+    margin-top: -10px;
+    color: cadetblue;
+}
+.Heading{
+    color: cadetblue;
+}

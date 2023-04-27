@@ -1,0 +1,20 @@
+.button
+{
+ margin: 20px;
+ border-radius: 20px;
+ width: 144px;
+ height: 44px;
+}
+.button-active{
+    background: #43f192;
+    color: #43f192;
+}
+.button-active:hover,
+.button-active:focus{
+    background-color: #43f192;
+    border-color: #43f192;
+    color: #fff;
+}
+.top-bar{
+    margin:25px 0;
+}
